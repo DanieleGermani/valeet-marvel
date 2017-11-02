@@ -1,5 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+
+
+//Routes
+import {app_routing} from './app.routes';
+//services
+import{InfoService} from './services/info-service.service';
+import{MarvelService} from './services/marvel.service.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -14,9 +22,12 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+     app_routing
+
   ],
-  providers: [],
+  providers: [InfoService,MarvelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

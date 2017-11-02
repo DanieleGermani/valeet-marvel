@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import{MarvelService} from '../../services/marvel.service.service';
 
 @Component({
   selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  templateUrl: './portfolio.component.html'
+
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent {
 
-  constructor() { }
+  constructor(public _marvelService:MarvelService) { }
 
-  ngOnInit() {
-  }
+
 
 }
