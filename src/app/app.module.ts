@@ -13,13 +13,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PortfolioItemComponent } from './components/portfolio-item/portfolio-item.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PortfolioComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioItemComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
