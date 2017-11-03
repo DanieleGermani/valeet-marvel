@@ -1,43 +1,36 @@
-<div *ngIf="product" class="animated fadeIn">
-
-
-  <header [ngStyle]="{'background-image': 'url( assets/productos/'+ cod +'/main.jpg)'}"
-  class="rk-portfolio-cover ">
-    <div class="item-inside__meta">
-      <h1 class="ae-u-bolder rk-portfolio-title ">{{product.producto}}</h1>
-      <p class="ae-theta rk-portfolio-category ">{{product.categoria}}</p>
-    </div>
-  </header>
+<div *ngIf="comic"  class="animated fadeIn">
   <div class="ae-container-fluid">
     <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
       <div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
-        <h2 class="rk-portfolio-inner-title ">{{product.producto}}</h2>
+        <h2 class="rk-portfolio-inner-title ">{{comic.series.name}}</h2>
+        <h4>{{comic.variantDescription}}</h4>
+        <p>Price $:{{comic.prices[0].price}}</p>
+        <a *ngFor="let item of comic.urls"  href="{{item.url }}" target="_blank">More info</a>
       </div>
-      <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
-        <p class="rk-portfolio-inner-client "><span class="ae-lambda">Client: </span><span class="ae-u-bolder">Daniele Germani</span></p>
-        <p class="au-underline rk-portfolio-inner-website "><a href="mailTo:daniele.germani.85@gmail.com" class="ae-kappa">daniele.germani.85@gmail.com</a></p>
-        <p class="ae-kappa ae-u-bold rk-portfolio-inner-date ">21 September, 2017</p>
-      </div>
+
+
+
     </div>
   </div>
   <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
     <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
       <div class="ae-grid__item item-lg-5 au-lg-ptp-1">
-        <h4 class="ae-u-bolder">{{product.subtitulo1}}</h4>
-        <p class="ae-eta">{{product.desc1}} </p>
-
+        <h4 class="ae-u-bolder">{{comic.title}}</h4>
+        <p class="ae-eta">{{comic.description}} </p>
       </div>
-      <div class="ae-grid__item item-lg-6 item-lg--offset-1"><img src="assets/productos/{{cod}}/pic-1.jpg" alt="{{product.producto}}"></div>
+      <div class="ae-grid__item item-lg-6 item-lg--offset-1"><img src="{{comic.thumbnail.path + '/standard_large.' + comic.thumbnail.extension}}" alt=""></div>
     </div>
     <div class="ae-grid ae-grid--collapse">
-      <div class="ae-grid__item item-lg-8 animated fadeIn"><img src="assets/productos/{{cod}}/pic-2.jpg" alt="{{product.producto}}"></div>
+      <div class="ae-grid__item item-lg-8 animated fadeIn"><img src="{{comic.thumbnail.path + '/standard_large.' + comic.thumbnail.extension}}" alt=""></div>
       <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
-        <p>{{product.desc2}} </p>
+        <h3>Creators:</h3>
+        <ul *ngFor="let item of comic.creators.items"   class="ae-u-bolder">
+          <li>{{item.name}} ({{item.role}})</li>
+        </ul>
 
-        <p class="ae-u-bolder">{{product.subtitulo2}}</p>
       </div>
     </div>
 
-
-
+    <!-- href="{{item.urls[0].url }}" target="_blank" -->
+</div>
 </div>

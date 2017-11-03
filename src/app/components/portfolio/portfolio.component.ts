@@ -7,6 +7,7 @@ import{MarvelService} from '../../services/marvel.service.service';
 
 })
 export class PortfolioComponent {
+  
 
   constructor(public _marvelService:MarvelService) { }
 

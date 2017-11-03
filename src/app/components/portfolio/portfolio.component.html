@@ -27,10 +27,10 @@
 <div *ngIf="_marvelService.characters.length > 0 && !_marvelService.loading" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4 animated fadeIn">
 
    <a *ngFor="let item of _marvelService.characters"
-    href="{{item.urls[0].url }}" target="_blank"class="rk-item ae-masonry__item">
+   [routerLink]="['/item',item.id]"  class="rk-item ae-masonry__item">
      <img src="{{item.thumbnail.path + '/standard_amazing.' + item.thumbnail.extension}}" alt="">
        <div class="item-meta">
-         <h2>{{item.name}}</h2>
+         <h2>{{item.title}}</h2>
          <p>ID:{{item.id}}</p>
        </div>
      </a>
