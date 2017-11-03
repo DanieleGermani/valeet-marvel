@@ -1,21 +1,28 @@
 
 <div class=" container ae-grid au-xs-ta-center au-mb-4 animated fadeIn">
 
-  <div
-  class="ae-grid__item item-lg-4  ae-kappa au-mb-3">
-<img src="../assets/img/danieleGermani.jpeg" class="au-mb-3">
-    <h5 class="ae-u-bolder au-mt-2">{{_infoS.info.name}}</h5>
-    <p class="ae-u-bolder au-mb-3">{{_infoS.info.name}}</p>
-    <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{_infoS.info.name}}</p>
-    <a href="htttps://twitter.com" class="ae-u-bolder au-underline"target="_blank">{{_infoS.info.name}}</a>
-  </div>
+
 
 
 
 <div class="ae-grid au-pt-2">
   <div class="ae-grid__item item-lg-8 item-lg--offset-2">
+    <img src="../assets/img/danieleGermani.jpeg" class="about-me">
+    <h5 class="ae-u-bolder au-mt-2">{{_infoS.info.name}}</h5>
+    <p>{{_infoS.info.industry}}</p>
+    <a href="tel:622659825" class="ae-u-bolder au-underline"target="_blank">{{_infoS.info.phone}}</a> <br>
+    <a href="mailto:daniele.germani.85@gmail.com" class="ae-u-bolder au-underline"target="_blank">{{_infoS.info.email}}</a>
     <h4 class="ae-u-bolder">About me</h4>
     <p>{{_infoS.info.descripction}}</p>
+    <h2>Technologies</h2>
+    <div *ngFor="let item of _infoS.info.specialties">
+
+
+
+      <p>{{item}}</p>
+    </div>
+
+
   </div>
 </div>
 
