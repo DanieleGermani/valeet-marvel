@@ -28,7 +28,7 @@
 
    <a *ngFor="let item of _marvelService.characters"
    [routerLink]="['/item',item.id]"  class="rk-item ae-masonry__item">
-     <img src="{{item.thumbnail.path + '/standard_amazing.' + item.thumbnail.extension}}" alt="">
+     <img src="{{item.thumbnail.path + '/standard_fantastic.' + item.thumbnail.extension}}" alt="">
        <div class="item-meta">
          <h2>{{item.title}}</h2>
          <p>ID:{{item.id}}</p>

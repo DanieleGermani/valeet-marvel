@@ -1,9 +1,9 @@
-/* * * * * * * * * * * * * * * * * * * * *\ 
- aurora-pack v1.0.0 
- Aurora Kit in one simple pack 
- (c) 2016 Lionel T <elrumordelaluz@hotmail.com> (http://elrumordelaluz.com) 
- https://github.com/aurora-kit/aurora-pack.git 
- Licensed under  MIT 
+/* * * * * * * * * * * * * * * * * * * * *\
+ aurora-pack v1.0.0
+ Aurora Kit in one simple pack
+ (c) 2016 Lionel T <elrumordelaluz@hotmail.com> (http://elrumordelaluz.com)
+ https://github.com/aurora-kit/aurora-pack.git
+ Licensed under  MIT
 \* * * * * * * * * * * * * * * * * * * * */
 .ae-container:before,
 .ae-container-fluid:before,
@@ -2602,8 +2602,8 @@ html {
 }
 
 body {
-  background-color: #fff;
-  color: #202020;
+  background-color: #473e37;
+  color: #dacaca;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -3420,7 +3420,8 @@ select.ae-input--lg {
 }
 
 .au-underline {
-  text-decoration: underline;
+  text-decoration: none;
+  color:#f34949;
 }
 
 .au-m-0 {
