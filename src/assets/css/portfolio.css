@@ -1,0 +1,72 @@
+.new-deal {
+  width: 100%;
+  float: left;
+  padding: 15px 0;
+}
+.margin-left{
+  margin-left: 70px;
+
+}
+
+.demoFirst > ul {
+  margin: 20px auto;
+  width: 40%;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+}
+
+.demoFirst {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+  background-color: rgba(26, 76, 110, 0.5);
+}
+
+.demoFirst p, .demoFirst h2 {
+  color: #fff;
+  padding: 10px;
+  left: -20px;
+  top: 20px;
+  position: relative
+}
+
+.demoFirst p {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0
+}
+
+.demoFirst h2 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.effect img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: bottom .3s ease-in-out;
+  -moz-transition: bottom .3s ease-in-out;
+  -o-transition: bottom .3s ease-in-out;
+  transition: bottom .3s ease-in-out;
+}
+
+.effect img.top:hover {
+  bottom: -96px;
+  padding-top: 100px;
+}
+
+h2.zero, p.zero {
+  margin: 0;
+  padding: 0
+}
