@@ -1,4 +1,4 @@
-<section class="ae-container-fluid ae-container-fluid--inner rk-portfolio animated fadeIn">
+<section class="margin-left animated fadeIn">
 <div align="center" *ngIf="_marvelService.loading">
 
   <h2> Loading...</h2>
@@ -24,20 +24,18 @@
   <p>Please wait...</p>
   </div>
 
-<div *ngIf="_marvelService.characters.length > 0 && !_marvelService.loading" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4 animated fadeIn">
+  <div *ngIf="_marvelService.sortByTitle.length > 0 && !_marvelService.loading" class="new-demo">
+ 		 <div class="container">
+ 		   			<div *ngFor="let item of _marvelService.sortByTitle" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+ 					<ul class="demoFirst effect">
+ 						<li>
+ 						   <h2 class="zero">ID:{{item.id}}</h2>
+ 						   <p class="zero">{{item.title}}</p>
+ 						</li>
+ 						<li><a [routerLink]="['/item',item.id]"><img class="top" src="{{item.thumbnail.path + '/standard_fantastic.' + item.thumbnail.extension}}" alt=""> </a></li>
+ 					</ul>
+ 					</div>
 
-   <a *ngFor="let item of _marvelService.characters"
-   [routerLink]="['/item',item.id]"  class="rk-item ae-masonry__item">
-     <img src="{{item.thumbnail.path + '/standard_fantastic.' + item.thumbnail.extension}}" alt="">
-       <div class="item-meta">
-         <h2>{{item.title}}</h2>
-         <p>ID:{{item.id}}</p>
-       </div>
-     </a>
-
-
- </div>
-
-
-
+ 					</div>
+        </div>
 </section>

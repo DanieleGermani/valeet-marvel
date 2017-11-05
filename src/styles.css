@@ -4,11 +4,11 @@
   animation-duration: 0.8s;
   animation-fill-mode: both;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -21,16 +21,16 @@
 /*
   Color del Loading
 */
-svg path,
-svg rect{
+
+svg path, svg rect {
   fill: black;
 }
 
-.about-me{
+.about-me {
   width: 400px;
   border-radius: 50%;
 }
 
-.item-lg--offset-2 > h4{
+.item-lg--offset-2>h4 {
   margin-top: 2.2rem;
 }

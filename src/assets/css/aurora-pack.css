@@ -2520,7 +2520,9 @@ html {
 .ae-grid--collapse > .ae-grid__item {
   padding-left: 0;
   padding-right: 0;
+  text-transform:capitalize;
 }
+
 
 .ae-grid--deepcollapse,
 .ae-grid--deepcollapse .ae-grid {
