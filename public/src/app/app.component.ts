@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import{InfoService} from './services/info-service.service';
 import{MarvelService} from './services/marvel.service.service';
 
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

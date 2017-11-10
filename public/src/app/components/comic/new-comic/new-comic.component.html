@@ -1,0 +1,30 @@
+
+<div class="container">
+<form (submit)="create()">
+    <input placeholder="digitalId" type="text" name="digitalId" [(ngModel)]="newComic.digitalId">
+    <input placeholder="Title" type="text" name="title" [(ngModel)]="newComic.title">
+    <input placeholder="issueNumber" type="text" name="issueNumber" [(ngModel)]="newComic.issueNumber">
+    <input placeholder="variantDescription" type="text" name="variantDescription" [(ngModel)]="newComic.variantDescription">
+    <input placeholder="Description" type="text" name="description" [(ngModel)]="newComic.description">
+    <input placeholder="isbn" type="text" name="isbn" [(ngModel)]="newComic.isbn">
+    <input placeholder="upc" type="text" name="upc" [(ngModel)]="newComic.upc">
+    <input placeholder="diamondCode" type="text" name="diamondCode" [(ngModel)]="newComic.diamondCode">
+    <input placeholder="ean" type="text" name="ean" [(ngModel)]="newComic.ean">
+    <input placeholder="issn" type="text" name="issn" [(ngModel)]="newComic.issn">
+    <input placeholder="format" type="text" name="name" [(ngModel)]="newComic.format">
+    <input placeholder="pageCount" type="text" name="name" [(ngModel)]="newComic.pageCount">
+    <input placeholder="language" type="text" name="name" [(ngModel)]="newComic.newTextObjects.textObjects.language">
+    <input placeholder="text" type="text" name="name" [(ngModel)]="newComic.textObjects.text">
+
+    <input placeholder="resourceURI" type="text" name="name" [(ngModel)]="newComic.resourceURI">
+    <input placeholder="url" type="text" name="name" [(ngModel)]="newComic.url">
+
+    <input placeholder="variantes" type="text" name="name" [(ngModel)]="newComic.variantes">
+    <input placeholder="collections" type="text" name="name" [(ngModel)]="newComic.collections">
+
+
+  <button class="btn btn-primary" type="submit">
+    Send
+  </button>
+</form>
+</div>

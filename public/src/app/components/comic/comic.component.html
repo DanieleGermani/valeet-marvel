@@ -1,0 +1,20 @@
+
+
+<h2>comic component</h2>
+  <div class="container">
+    <div *ngFor="let item of comics"class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+
+       <ul class="demoFirst effect">
+         <li>
+            <h2 class="zero">ID: {{item._id}}</h2>
+            <p class="zero">{{item.title}}</p>
+         </li>
+         <!-- <li><a [routerLink]="['/item',item.id]"><img class="top" src="{{item.thumbnail.path + '/standard_fantastic.' + item.thumbnail.extension}}" alt=""> </a></li> -->
+       </ul>
+       </div>
+
+       </div>
+
+
+
+<app-new-comic  (createNewComicEvent)="create($event)"></app-new-comic>
