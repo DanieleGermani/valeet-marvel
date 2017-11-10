@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import {ComicService} from '../../../services/comic.service';
 import {Comic} from '../comic';
-import {TextObjects} from '../comic';
+// import {TextObjects} from '../comic';
 
 
 @Component({
@@ -12,15 +12,18 @@ import {TextObjects} from '../comic';
 export class NewComicComponent implements OnInit {
   @Output() createNewComicEvent = new EventEmitter();
    newComic = new Comic;
-   newTextObjects = new TextObjects;
+  //  newTextObjects = new TextObjects;
 
   constructor() { }
 
   ngOnInit() {
+
   }
   create() {
      this.createNewComicEvent.emit(this.newComic);
+     console.log(this.newComic);
      this.newComic = new Comic();
+
     }
 
 }

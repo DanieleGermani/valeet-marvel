@@ -14,7 +14,7 @@ export class Comic {
     public issn: string = "",
     public format: string = "",
     public pageCount: string = "",
-    public textObjects:any = TextObjects,
+    public textObjects:any =TextObjects,
     public resourceURI: string = "",
     public url: string = "",
     // public series: Array<any>,
