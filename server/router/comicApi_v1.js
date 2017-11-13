@@ -9,7 +9,8 @@ router.post('/comics', (req, res) => {
         if (err)  {
             res.json(err);
         }
-        else return res.json(comic);
+
+        else return console.log(res.json(comic));
     });
 });
 router.get('/comics', (req, res) => {

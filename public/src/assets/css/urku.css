@@ -53,7 +53,7 @@ body {
 }
 
 .rk-header {
-  background: #473e37;
+  background: #272422;
   position: relative;
   z-index: 5;
 }
@@ -84,7 +84,7 @@ body {
   .rk-topbar {
     padding-bottom: 0;
     color: red;
-    background: #463d36;
+    background: #272422;
   }
 }
 
@@ -1206,33 +1206,7 @@ body {
   }
 }
 
-.item-7 {
-  background-image: url("../img/project-7.jpg");
-}
 
-.item-8 {
-  background-image: url("../img/project-8.jpg");
-}
-
-.item-9 {
-  background-image: url("../img/project-9.jpg");
-}
-
-.item-10 {
-  background-image: url("../img/project-10.jpg");
-}
-
-.item-11 {
-  background-image: url("../img/project-11.jpg");
-}
-
-.item-12 {
-  background-image: url("../img/project-12.jpg");
-}
-
-.item-13 {
-  background-image: url("../img/project-13.jpg");
-}
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-13 {
     background-position: top right;
